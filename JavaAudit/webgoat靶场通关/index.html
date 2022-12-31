@@ -951,7 +951,7 @@ https://shop.example.com?article<span class="o">=</span><span class="m">4</span>
 <span class="err">如果以上请求延时</span><span class="mi">10</span><span class="err">秒才收到响应数据，说明存在延时注入漏洞</span><span class="w"></span>
 </code></pre></div>
 <p>题目：<code>Goal: Can you login as Tom?</code></p>
-<p><img alt="image-20221227130724302" src="C:/Users/robin/AppData/Roaming/Typora/typora-user-images/image-20221227130724302.png" /></p>
+<p><img alt="image-20221227130724302" src="https://raw.githubusercontent.com/robinoneway/ImageHost/master/img/image-20221227130724302.png" /></p>
 <p>题目给出两个请求窗口：登录<code>LOGIN</code>和注册<code>REGISTER</code>，目标是以<code>Tom</code>身份进行登录。经过注册尝试，发现<code>Tom</code>账户系统中已经存在，但是我们不知道<code>Tom</code>账户的密码。通过抓包，我们得到两个请求的接口地址分别为：</p>
 <div class="highlight"><pre><span></span><code><span class="err">登录：POST /WebGoat/SqlInjectionAdvanced/challenge_Login</span>
 <span class="err">注册：PUT /WebGoat/SqlInjectionAdvanced/challenge</span>
